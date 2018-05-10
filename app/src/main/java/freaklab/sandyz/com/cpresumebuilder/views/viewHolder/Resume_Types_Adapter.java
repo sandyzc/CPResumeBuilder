@@ -4,22 +4,17 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
-import android.util.DisplayMetrics;
-import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.WindowManager;
 import android.view.animation.DecelerateInterpolator;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
 
-import freaklab.sandyz.com.cpresumebuilder.InsertDataActivity;
+import freaklab.sandyz.com.cpresumebuilder.activitys.InsertDataActivity;
 import freaklab.sandyz.com.cpresumebuilder.R;
 import freaklab.sandyz.com.cpresumebuilder.Utils;
-import freaklab.sandyz.com.cpresumebuilder.activitys.ResumeTypesActivity;
 
 /**
  * Created by Santosh sc on 07-04-2018.

@@ -20,20 +20,20 @@
             android:layout_height="wrap_content"
             android:layout_gravity="top"
             android:padding="10sp"
-            android:text="@string/education_fragment_title"
+            android:text="@string/experience_fragment_title"
             android:textAlignment="center"
             android:textColor="@color/colorPrimary"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <android.support.v7.widget.RecyclerView
-            android:id="@+id/edu_recycle"
+            android:id="@+id/experience_recycle"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </LinearLayout>
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab_edu"
+        android:id="@+id/fab_experience"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"

@@ -1,7 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="freaklab.sandyz.com.cpresumebuilder.InsertDataActivity">
+    tools:context="freaklab.sandyz.com.cpresumebuilder.activitys.InsertDataActivity">
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"

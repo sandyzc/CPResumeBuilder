@@ -1,189 +1,193 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="freaklab.sandyz.com.cpresumebuilder.InsertDataActivity$PlaceholderFragment">
+    tools:context="freaklab.sandyz.com.cpresumebuilder.activitys.InsertDataActivity$Basic_Info_holderFragment">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:fontFamily="serif"
-        android:gravity="center"
-        android:text="Personal Details"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="30sp"
-        android:textStyle="bold" />
-
-    <ImageButton
-        android:id="@+id/data_photo"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_gravity="center"
-        android:background="@color/White"
-        android:contentDescription="photo"
-        android:src="@drawable/camera" />
-
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="5dp">
+        android:orientation="vertical">
 
-        <LinearLayout
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:textColor="@color/colorPrimaryDark">
+            android:layout_height="50dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Personal Details"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
-            <com.rengwuxian.materialedittext.MaterialEditText
-                android:id="@+id/data_person_Name"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:hint="Name"
-                app:met_singleLineEllipsis="true"
-                app:met_baseColor="@color/Black"
-                android:textColor="@color/colorPrimaryDark"
-                app:met_floatingLabel="highlight"
-                app:met_floatingLabelText="Name" />
+        <ImageButton
+            android:id="@+id/data_photo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:background="@color/White"
+            android:contentDescription="photo"
+            android:src="@drawable/camera" />
 
-            <com.rengwuxian.materialedittext.MaterialEditText
-                android:id="@+id/data_title"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:hint="Professional Title"
-                app:met_baseColor="@color/Black"
-                app:met_floatingLabel="highlight"
-                app:met_singleLineEllipsis="true"
-                app:met_floatingLabelText="Professional Title"
-                app:met_floatingLabelAnimating="true"
-                android:textColor="@color/colorPrimaryDark" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
 
-            <com.rengwuxian.materialedittext.MaterialEditText
-                android:id="@+id/data_summery"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:hint="Summery"
-                app:met_baseColor="@color/Black"
-                app:met_floatingLabel="highlight"
-                app:met_singleLineEllipsis="true"
-                app:met_floatingLabelText="Summery"
-                app:met_floatingLabelAnimating="true"
-                android:textColor="@color/colorPrimaryDark" />
-
-            <com.rengwuxian.materialedittext.MaterialEditText
-                android:id="@+id/data_phone_number"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:hint="Phone Number"
-                android:inputType="phone"
-                app:met_baseColor="@color/Black"
-                app:met_floatingLabel="highlight"
-                app:met_singleLineEllipsis="true"
-                app:met_floatingLabelText="Phone Number"
-                app:met_floatingLabelAnimating="true"
-                android:textColor="@color/colorPrimaryDark" />
-
-            <com.rengwuxian.materialedittext.MaterialEditText
-                android:id="@+id/data_phone_number2"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:hint="Phone Number 2"
-                app:met_baseColor="@color/Black"
-                app:met_floatingLabel="highlight"
-                app:met_singleLineEllipsis="true"
-                app:met_floatingLabelText="Phone Number 2"
-                app:met_floatingLabelAnimating="true"
-                android:inputType="phone"
-                android:textColor="@color/colorPrimaryDark" />
-
-
-            <com.rengwuxian.materialedittext.MaterialEditText
-                android:id="@+id/data_email_id"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:hint="Email ID"
-                android:inputType="textEmailAddress"
-                app:met_baseColor="@color/Black"
-                app:met_floatingLabel="highlight"
-                app:met_singleLineEllipsis="true"
-                app:met_floatingLabelText="Email ID"
-                app:met_floatingLabelAnimating="true"
-                android:textColor="@color/colorPrimaryDark" />
-
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:text="Address"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:orientation="vertical"
+                android:textColor="@color/colorPrimaryDark">
 
-            <com.rengwuxian.materialedittext.MaterialEditText
-                android:id="@+id/data_address_line1"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:hint="line 1"
-                app:met_baseColor="@color/Black"
-                app:met_floatingLabel="highlight"
-                app:met_singleLineEllipsis="true"
-                app:met_floatingLabelText="Address Line 1"
-                app:met_floatingLabelAnimating="true"
-                android:textColor="@color/colorPrimaryDark" />
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/data_person_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:hint="Name"
+                    android:textColor="@color/colorPrimaryDark"
+                    app:met_baseColor="@color/Black"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelText="Name"
+                    app:met_singleLineEllipsis="true" />
 
-            <com.rengwuxian.materialedittext.MaterialEditText
-                android:id="@+id/data_address_line2"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:hint="line 2"
-                app:met_baseColor="@color/Black"
-                app:met_floatingLabel="highlight"
-                app:met_singleLineEllipsis="true"
-                app:met_floatingLabelText="Address Line 2"
-                app:met_floatingLabelAnimating="true"
-                android:textColor="@color/colorPrimaryDark" />
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/data_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:hint="Professional Title"
+                    android:textColor="@color/colorPrimaryDark"
+                    app:met_baseColor="@color/Black"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelAnimating="true"
+                    app:met_floatingLabelText="Professional Title"
+                    app:met_singleLineEllipsis="true" />
 
-            <com.rengwuxian.materialedittext.MaterialEditText
-                android:id="@+id/data_address_street"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:hint="Street"
-                app:met_baseColor="@color/Black"
-                app:met_floatingLabel="highlight"
-                app:met_singleLineEllipsis="true"
-                app:met_floatingLabelText="Address Street"
-                app:met_floatingLabelAnimating="true"
-                android:textColor="@color/colorPrimaryDark" />
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/data_summery"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:hint="Summery"
+                    android:textColor="@color/colorPrimaryDark"
+                    app:met_baseColor="@color/Black"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelAnimating="true"
+                    app:met_floatingLabelText="Summery"
+                    app:met_singleLineEllipsis="true" />
 
-            <com.rengwuxian.materialedittext.MaterialEditText
-                android:id="@+id/data_address_pincode"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:hint="Pincode"
-                app:met_baseColor="@color/Black"
-                app:met_floatingLabel="highlight"
-                app:met_singleLineEllipsis="true"
-                app:met_floatingLabelText="Pincode"
-                app:met_floatingLabelAnimating="true"
-                android:inputType="number"
-                android:textColor="@color/colorPrimaryDark" />
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/data_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:textColor="@color/colorPrimaryDark"
+                    app:met_baseColor="@color/Black"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelAnimating="true"
+                    app:met_floatingLabelText="Phone Number"
+                    app:met_singleLineEllipsis="true" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/data_email_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:hint="Email ID"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/colorPrimaryDark"
+                    app:met_baseColor="@color/Black"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelAnimating="true"
+                    app:met_floatingLabelText="Email ID"
+                    app:met_singleLineEllipsis="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Address"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/data_address_line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:hint="line 1"
+                    android:textColor="@color/colorPrimaryDark"
+                    app:met_baseColor="@color/Black"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelAnimating="true"
+                    app:met_floatingLabelText="Address Line 1"
+                    app:met_singleLineEllipsis="true" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/data_address_line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:hint="line 2"
+                    android:textColor="@color/colorPrimaryDark"
+                    app:met_baseColor="@color/Black"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelAnimating="true"
+                    app:met_floatingLabelText="Address Line 2"
+                    app:met_singleLineEllipsis="true" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/data_address_street"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:hint="Street"
+                    android:textColor="@color/colorPrimaryDark"
+                    app:met_baseColor="@color/Black"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelAnimating="true"
+                    app:met_floatingLabelText="Address Street"
+                    app:met_singleLineEllipsis="true" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/data_address_pincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:hint="Pincode"
+                    android:inputType="number"
+                    android:textColor="@color/colorPrimaryDark"
+                    app:met_baseColor="@color/Black"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelAnimating="true"
+                    app:met_floatingLabelText="Pincode"
+                    app:met_singleLineEllipsis="true" />
 
 
-            <com.rengwuxian.materialedittext.MaterialEditText
-                android:id="@+id/data_objective"
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:gravity="start"
-                android:hint="Objective"
-                app:met_baseColor="@color/Black"
-                app:met_floatingLabel="highlight"
-                app:met_floatingLabelText="Professional Objective"
-                app:met_floatingLabelAnimating="true"
-                android:textColor="@color/colorPrimaryDark" />
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/data_objective"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="start"
+                    android:hint="Objective"
+                    android:textColor="@color/colorPrimaryDark"
+                    app:met_baseColor="@color/Black"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelAnimating="true"
+                    app:met_floatingLabelText="Professional Objective" />
 
+            </LinearLayout>
+        </ScrollView>
 
-        </LinearLayout>
-    </ScrollView>
-</LinearLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_basic_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:elevation="4dp"
+        android:tint="@color/colorPrimaryDark"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+</android.support.design.widget.CoordinatorLayout>

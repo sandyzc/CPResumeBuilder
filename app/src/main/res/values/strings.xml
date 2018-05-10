@@ -10,4 +10,7 @@
     <string name="title_activity_resume_types">ResumeTypesActivity</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="title_activity_insert_data">InsertDataActivity</string>
+    <string name="education_fragment_title">EDUCATION
+        \n From Highest to Lowest</string>
+    <string name="experience_fragment_title">Experience \n From latest to Oldest</string>
 </resources>

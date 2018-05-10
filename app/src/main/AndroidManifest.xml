@@ -24,7 +24,7 @@
             android:label="@string/title_activity_resume_types"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".InsertDataActivity"
+            android:name=".activitys.InsertDataActivity"
             android:label="@string/title_activity_insert_data"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>

@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Base.ThemeOverlay.AppCompat.Light">
@@ -14,6 +14,7 @@
         <item name="windowActionBar">true</item>
         <item name="windowNoTitle">true</item>
     </style>
+
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
