@@ -16,6 +16,9 @@ import android.view.ViewAnimationUtils;
 import android.view.ViewTreeObserver;
 import android.view.animation.AccelerateInterpolator;
 
+import com.ramotion.cardslider.CardSliderLayoutManager;
+import com.ramotion.cardslider.CardSnapHelper;
+
 import freaklab.sandyz.com.cpresumebuilder.R;
 import freaklab.sandyz.com.cpresumebuilder.views.viewHolder.Resume_Types_Adapter;
 
@@ -38,7 +41,9 @@ public class ResumeTypesActivity extends AppCompatActivity {
         mSnapHelper.attachToRecyclerView(recyclerView);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
+
         recyclerView.setLayoutManager(layoutManager);
+
 
 
     }

@@ -27,7 +27,7 @@ public class Resume_Types_Adapter extends RecyclerView.Adapter<Resume_Types_Adap
     private int lastAnimatedPosition = -1;
     private int itemsCount = 0;
     Context context;
-    public Resume_Types_Adapter(Context context) {
+    public Resume_Types_Adapter(Context context)     {
         this.context = context;
     }
 

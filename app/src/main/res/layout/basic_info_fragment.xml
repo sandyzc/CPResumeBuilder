@@ -5,11 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="freaklab.sandyz.com.cpresumebuilder.activitys.InsertDataActivity$Basic_Info_holderFragment">
+    tools:context="freaklab.sandyz.com.cpresumebuilder.activitys.InsertDataActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/background_white"
         android:orientation="vertical">
 
 
@@ -19,11 +20,11 @@
             android:fontFamily="serif"
             android:gravity="center"
             android:text="Personal Details"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/White"
             android:textSize="30sp"
             android:textStyle="bold" />
 
-        <ImageButton
+        <ImageView
             android:id="@+id/data_photo"
             android:layout_width="150dp"
             android:layout_height="150dp"
@@ -41,28 +42,31 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:textColor="@color/colorPrimaryDark">
+                android:textColor="@color/White">
 
                 <com.rengwuxian.materialedittext.MaterialEditText
                     android:id="@+id/data_person_Name"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:hint="Name"
-                    android:textColor="@color/colorPrimaryDark"
-                    app:met_baseColor="@color/Black"
+                    android:textColor="@color/White"
+                    app:met_primaryColor="@color/White"
+                    app:met_baseColor="@color/White"
                     app:met_floatingLabel="highlight"
                     app:met_floatingLabelText="Name"
-                    app:met_singleLineEllipsis="true" />
+                    app:met_singleLineEllipsis="true"
+                    />
 
                 <com.rengwuxian.materialedittext.MaterialEditText
                     android:id="@+id/data_title"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:hint="Professional Title"
-                    android:textColor="@color/colorPrimaryDark"
-                    app:met_baseColor="@color/Black"
+                    android:textColor="@color/White"
+                    app:met_baseColor="@color/White"
                     app:met_floatingLabel="highlight"
                     app:met_floatingLabelAnimating="true"
+                    app:met_primaryColor="@color/White"
                     app:met_floatingLabelText="Professional Title"
                     app:met_singleLineEllipsis="true" />
 
@@ -71,10 +75,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:hint="Summery"
-                    android:textColor="@color/colorPrimaryDark"
-                    app:met_baseColor="@color/Black"
+                    android:textColor="@color/White"
+                    app:met_baseColor="@color/White"
                     app:met_floatingLabel="highlight"
                     app:met_floatingLabelAnimating="true"
+                    app:met_primaryColor="@color/White"
                     app:met_floatingLabelText="Summery"
                     app:met_singleLineEllipsis="true" />
 
@@ -84,10 +89,11 @@
                     android:layout_height="100dp"
                     android:hint="Phone Number"
                     android:inputType="phone"
-                    android:textColor="@color/colorPrimaryDark"
-                    app:met_baseColor="@color/Black"
+                    android:textColor="@color/White"
+                    app:met_baseColor="@color/White"
                     app:met_floatingLabel="highlight"
                     app:met_floatingLabelAnimating="true"
+                    app:met_primaryColor="@color/White"
                     app:met_floatingLabelText="Phone Number"
                     app:met_singleLineEllipsis="true" />
 
@@ -97,8 +103,9 @@
                     android:layout_height="100dp"
                     android:hint="Email ID"
                     android:inputType="textEmailAddress"
-                    android:textColor="@color/colorPrimaryDark"
-                    app:met_baseColor="@color/Black"
+                    app:met_primaryColor="@color/White"
+                    android:textColor="@color/White"
+                    app:met_baseColor="@color/White"
                     app:met_floatingLabel="highlight"
                     app:met_floatingLabelAnimating="true"
                     app:met_floatingLabelText="Email ID"
@@ -109,7 +116,7 @@
                     android:layout_height="wrap_content"
                     android:padding="5dp"
                     android:text="Address"
-                    android:textColor="@color/colorPrimaryDark"
+                    android:textColor="@color/White"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -118,8 +125,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:hint="line 1"
-                    android:textColor="@color/colorPrimaryDark"
-                    app:met_baseColor="@color/Black"
+                    android:textColor="@color/White"
+                    app:met_baseColor="@color/White"
+                    app:met_primaryColor="@color/White"
                     app:met_floatingLabel="highlight"
                     app:met_floatingLabelAnimating="true"
                     app:met_floatingLabelText="Address Line 1"
@@ -128,10 +136,11 @@
                 <com.rengwuxian.materialedittext.MaterialEditText
                     android:id="@+id/data_address_line2"
                     android:layout_width="match_parent"
+                    app:met_primaryColor="@color/White"
                     android:layout_height="80dp"
                     android:hint="line 2"
-                    android:textColor="@color/colorPrimaryDark"
-                    app:met_baseColor="@color/Black"
+                    android:textColor="@color/White"
+                    app:met_baseColor="@color/White"
                     app:met_floatingLabel="highlight"
                     app:met_floatingLabelAnimating="true"
                     app:met_floatingLabelText="Address Line 2"
@@ -141,9 +150,10 @@
                     android:id="@+id/data_address_street"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
+                    app:met_primaryColor="@color/White"
                     android:hint="Street"
-                    android:textColor="@color/colorPrimaryDark"
-                    app:met_baseColor="@color/Black"
+                    android:textColor="@color/White"
+                    app:met_baseColor="@color/White"
                     app:met_floatingLabel="highlight"
                     app:met_floatingLabelAnimating="true"
                     app:met_floatingLabelText="Address Street"
@@ -155,11 +165,12 @@
                     android:layout_height="80dp"
                     android:hint="Pincode"
                     android:inputType="number"
-                    android:textColor="@color/colorPrimaryDark"
-                    app:met_baseColor="@color/Black"
+                    android:textColor="@color/White"
+                    app:met_baseColor="@color/White"
                     app:met_floatingLabel="highlight"
                     app:met_floatingLabelAnimating="true"
                     app:met_floatingLabelText="Pincode"
+                    app:met_primaryColor="@color/White"
                     app:met_singleLineEllipsis="true" />
 
 
@@ -168,9 +179,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="start"
+                    app:met_primaryColor="@color/White"
                     android:hint="Objective"
-                    android:textColor="@color/colorPrimaryDark"
-                    app:met_baseColor="@color/Black"
+                    android:textColor="@color/White"
+                    app:met_baseColor="@color/White"
                     app:met_floatingLabel="highlight"
                     app:met_floatingLabelAnimating="true"
                     app:met_floatingLabelText="Professional Objective" />
@@ -187,7 +199,7 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
         android:elevation="4dp"
-        android:tint="@color/colorPrimaryDark"
+        android:tint="@color/White"
         app:srcCompat="@android:drawable/ic_input_add" />
 
 </android.support.design.widget.CoordinatorLayout>

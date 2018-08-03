@@ -5,26 +5,28 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
+    android:background="@color/colorPrimaryDark"
     android:orientation="vertical">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/background_white"
         android:orientation="vertical">
 
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="top"
-            android:padding="10sp"
+            android:layout_gravity="center_vertical"
+            android:padding="12sp"
             android:text="@string/education_fragment_title"
             android:textAlignment="center"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/White"
             android:textSize="20sp"
             android:textStyle="bold" />
+
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/edu_recycle"

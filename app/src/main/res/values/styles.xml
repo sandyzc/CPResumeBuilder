@@ -10,6 +10,11 @@
         <item name="android:textColorPrimary">@color/White</item>
     </style>
 
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/pop_in</item>
+        <item name="android:windowExitAnimation">@anim/pop_out</item>
+    </style>
+
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">true</item>
         <item name="windowNoTitle">true</item>
