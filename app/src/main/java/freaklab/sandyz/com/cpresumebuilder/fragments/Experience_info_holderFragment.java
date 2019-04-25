@@ -1,5 +1,6 @@
 package freaklab.sandyz.com.cpresumebuilder.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -17,6 +18,7 @@ import java.util.ArrayList;
 
 import freaklab.sandyz.com.cpresumebuilder.Database.Expereince_Database;
 import freaklab.sandyz.com.cpresumebuilder.R;
+import freaklab.sandyz.com.cpresumebuilder.activitys.Final_Preview;
 import freaklab.sandyz.com.cpresumebuilder.beans.Experince_Beans;
 import freaklab.sandyz.com.cpresumebuilder.fragments.dialogs.Experience_dialog_fragment;
 import freaklab.sandyz.com.cpresumebuilder.views.viewHolder.Experience_info_adapter;
@@ -64,8 +66,11 @@ public class Experience_info_holderFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                Experience_dialog_fragment experience_dialog_fragment = Experience_dialog_fragment.newInstance();
-                experience_dialog_fragment.show(getActivity().getFragmentManager(),"Expereince_dialog");
+                Intent intent= new Intent(getContext(), Final_Preview.class);
+                startActivity(intent);
+
+//                Experience_dialog_fragment experience_dialog_fragment = Experience_dialog_fragment.newInstance();
+//                experience_dialog_fragment.show(getActivity().getFragmentManager(),"Expereince_dialog");
 
             }
         });

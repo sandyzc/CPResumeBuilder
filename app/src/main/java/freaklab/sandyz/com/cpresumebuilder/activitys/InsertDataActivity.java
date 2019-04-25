@@ -11,6 +11,7 @@ import freaklab.sandyz.com.cpresumebuilder.R;
 import freaklab.sandyz.com.cpresumebuilder.fragments.Basic_Info_holderFragment;
 import freaklab.sandyz.com.cpresumebuilder.fragments.Education_Info_holderFragment;
 import freaklab.sandyz.com.cpresumebuilder.fragments.Experience_info_holderFragment;
+import freaklab.sandyz.com.cpresumebuilder.fragments.Skill_set;
 
 public class InsertDataActivity extends AppCompatActivity {
 
@@ -42,18 +43,20 @@ public class InsertDataActivity extends AppCompatActivity {
 
                 case 0:
                     return Basic_Info_holderFragment.newInstance(0);
-                case 1:
-                    return Education_Info_holderFragment.newInstance(1);
                 case 2:
+                    return Education_Info_holderFragment.newInstance(1);
+                case 3:
                     return Experience_info_holderFragment.newInstance(2);
+                case 1:
+                    return Skill_set.newInstance(3);
             }
             return null;
         }
 
         @Override
         public int getCount() {
-            // Show 3 total pages.
-            return 3;
+            // Show 4 total pages.
+            return 4;
         }
     }
 

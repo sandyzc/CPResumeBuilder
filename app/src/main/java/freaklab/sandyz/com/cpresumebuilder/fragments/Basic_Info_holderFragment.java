@@ -1,8 +1,6 @@
 package freaklab.sandyz.com.cpresumebuilder.fragments;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -16,10 +14,11 @@ import android.widget.Toast;
 import com.rengwuxian.materialedittext.MaterialEditText;
 import com.squareup.picasso.Picasso;
 
-import java.io.FileNotFoundException;
 import java.io.InputStream;
 
+import freaklab.sandyz.com.cpresumebuilder.Database.Basic_Info_Database;
 import freaklab.sandyz.com.cpresumebuilder.R;
+import freaklab.sandyz.com.cpresumebuilder.beans.Basic_Info_Beans;
 
 import static android.app.Activity.RESULT_OK;
 
@@ -27,6 +26,8 @@ public class Basic_Info_holderFragment extends Fragment {
 
     ImageView photo_button;
     FloatingActionButton fab;
+    Basic_Info_Beans basic_info_beans;
+    Basic_Info_Database basic_info_database;
 
     private static final int GALLERY_REQUEST = 100;
 
@@ -42,16 +43,16 @@ public class Basic_Info_holderFragment extends Fragment {
             address_pincode,
             professional_objective;
 
-    int     name_length=2,
-            title_length=2,
-            profile_summery_length=5,
-            phone_number_length =10,
-            email_id_length=10,
-            address_line1_length=2,
-            address_line2_length=2,
-            address_street_length=2,
-            adress_pincode_length=6,
-            proffesional_objective_length=10;
+//    int     name_length=2,
+//            title_length=2,
+//            profile_summery_length=5,
+//            phone_number_length =10,
+//            email_id_length=10,
+//            address_line1_length=2,
+//            address_line2_length=2,
+//            address_street_length=2,
+//            adress_pincode_length=6,
+//            proffesional_objective_length=10;
 
 
     private static final String ARG_SECTION_NUMBER = "section_number";
@@ -89,7 +90,9 @@ public class Basic_Info_holderFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.basic_info_fragment, container, false);
+        final View rootView = inflater.inflate(R.layout.basic_info_fragment, container, false);
+
+        basic_info_database= new Basic_Info_Database(getContext());
         loadViews(rootView);
 
         photo_button.setOnClickListener(new View.OnClickListener() {
@@ -98,6 +101,31 @@ public class Basic_Info_holderFragment extends Fragment {
                 Intent get_pic = new Intent(Intent.ACTION_PICK);
                 get_pic.setType("image/jpeg");
                 startActivityForResult(get_pic, GALLERY_REQUEST);
+            }
+        });
+
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                basic_info_database.openDB();
+
+                basic_info_database.insertData(name.getText().toString(),
+                        title.getText().toString(),
+                        profile_summery.getText().toString()
+                        ,phone_number.getText().toString(),
+                        email_id.getText().toString(),
+                        address_lin1.getText().toString()
+                        ,address_line2.getText().toString(),
+                        address_street.getText().toString(),
+                        address_pincode.getText().toString()
+                ,professional_objective.getText().toString());
+
+                Toast.makeText(getContext(),"data saved",Toast.LENGTH_LONG).show();
+
+                getFragmentManager().beginTransaction().replace(R.id.basic_info_frag,new Skill_set()).addToBackStack(null).commit();
+
+
             }
         });
 

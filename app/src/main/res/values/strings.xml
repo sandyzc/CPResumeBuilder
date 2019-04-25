@@ -13,4 +13,7 @@
     <string name="education_fragment_title">EDUCATION
         \n From Highest to Lowest</string>
     <string name="experience_fragment_title">Experience \n From latest to Oldest</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

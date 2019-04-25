@@ -1,7 +1,7 @@
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/constraintLayout"
+    android:id="@+id/basic_info_frag"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -66,8 +66,8 @@
                     app:met_baseColor="@color/White"
                     app:met_floatingLabel="highlight"
                     app:met_floatingLabelAnimating="true"
-                    app:met_primaryColor="@color/White"
                     app:met_floatingLabelText="Professional Title"
+                    app:met_primaryColor="@color/White"
                     app:met_singleLineEllipsis="true" />
 
                 <com.rengwuxian.materialedittext.MaterialEditText

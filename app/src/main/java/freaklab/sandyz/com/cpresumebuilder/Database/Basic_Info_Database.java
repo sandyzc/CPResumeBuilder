@@ -83,26 +83,24 @@ public class Basic_Info_Database extends SQLiteOpenHelper {
     public long insertData(String name_, String Title_, String Summery_, String ph_number, String e_mail
             , String add_line1, String add_line2, String street_, String pin_code, String ob_jective) {
 
-        this.database = this.getWritableDatabase();
+            this.database = this.getWritableDatabase();
 
-        ContentValues values = new ContentValues();
-        values.put(Name, name_);
-        values.put(Title, Title_);
-        values.put(Summery, Summery_);
-        values.put(Phone_number, ph_number);
-        values.put(Email, e_mail);
-        values.put(Address_line1, add_line1);
-        values.put(Address_line2, add_line2);
-        values.put(Street, street_);
-        values.put(Pincode, pin_code);
-        values.put(Objective, ob_jective);
+            ContentValues values = new ContentValues();
+            values.put(Name, name_);
+            values.put(Title, Title_);
+            values.put(Summery, Summery_);
+            values.put(Phone_number, ph_number);
+            values.put(Email, e_mail);
+            values.put(Address_line1, add_line1);
+            values.put(Address_line2, add_line2);
+            values.put(Street, street_);
+            values.put(Pincode, pin_code);
+            values.put(Objective, ob_jective);
 
-        Log.d("DataBase", "Data sucessfully saved");
+            Log.d("DataBase", "Data sucessfully saved");
 
-        return this.database.insert(Table_name, null, values);
-
-
-    }
+            return this.database.insert(Table_name, null, values);
+             }
 
     public ArrayList<Basic_Info_Beans> basic_info_data() {
 
@@ -131,6 +129,123 @@ public class Basic_Info_Database extends SQLiteOpenHelper {
             while (cursor.moveToNext());
         }
         return data;
+    }
+
+    public String getname(){
+        this.database=this.getReadableDatabase();
+
+        String name="";
+        String arguments = " SELECT * FROM " + Table_name;
+        Cursor cursor = this.database.rawQuery(arguments, null);
+
+        if (cursor.moveToFirst()){
+            name=cursor.getString(1);
+        }
+
+        return name;
+
+    }
+    public String getProfession(){
+        this.database=this.getReadableDatabase();
+
+        String name="";
+        String arguments = " SELECT * FROM " + Table_name;
+        Cursor cursor = this.database.rawQuery(arguments, null);
+
+        if (cursor.moveToFirst()){
+            name=cursor.getString(2);
+        }
+
+        return name;
+
+    }
+
+
+    public String getEmail(){
+        this.database=this.getReadableDatabase();
+
+        String name="";
+        String arguments = " SELECT * FROM " + Table_name;
+        Cursor cursor = this.database.rawQuery(arguments, null);
+
+        if (cursor.moveToFirst()){
+            name=cursor.getString(5);
+        }
+        return name;
+    }
+
+
+    public String getphone_number(){
+        this.database=this.getReadableDatabase();
+        String name="";
+        String arguments = " SELECT * FROM " + Table_name;
+        Cursor cursor = this.database.rawQuery(arguments, null);
+        if (cursor.moveToFirst()){
+            name=cursor.getString(4);
+        }
+        return name;
+
+    }
+    public String getAddress_line2(){
+        this.database=this.getReadableDatabase();
+        String name="";
+        String arguments = " SELECT * FROM " + Table_name;
+        Cursor cursor = this.database.rawQuery(arguments, null);
+        if (cursor.moveToFirst()){
+            name=cursor.getString(7);
+        }
+        return name;
+
+    }
+
+    public String getAddress_line1(){
+        this.database=this.getReadableDatabase();
+        String name="";
+        String arguments = " SELECT * FROM " + Table_name;
+        Cursor cursor = this.database.rawQuery(arguments, null);
+        if (cursor.moveToFirst()){
+            name=cursor.getString(6);
+        }
+        return name;
+
+    }
+
+//    Street-8
+
+    //    Pincode-9
+//    Objective-10
+    public String getStreet(){
+        this.database=this.getReadableDatabase();
+        String name="";
+        String arguments = " SELECT * FROM " + Table_name;
+        Cursor cursor = this.database.rawQuery(arguments, null);
+        if (cursor.moveToFirst()){
+            name=cursor.getString(8);
+        }
+        return name;
+
+    }
+    public String getPincode(){
+        this.database=this.getReadableDatabase();
+        String name="";
+        String arguments = " SELECT * FROM " + Table_name;
+        Cursor cursor = this.database.rawQuery(arguments, null);
+        if (cursor.moveToFirst()){
+            name=cursor.getString(9);
+        }
+        return name;
+
+    }
+    public String getObjective(){
+        this.database=this.getReadableDatabase();
+        String name="";
+        String arguments = " SELECT * FROM " + Table_name;
+        Cursor cursor = this.database.rawQuery(arguments, null);
+        if (cursor.moveToFirst()){
+            name=cursor.getString(10);
+        }
+        return name;
+
     }
 
 

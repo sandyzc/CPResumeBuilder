@@ -12,6 +12,7 @@ import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
 
+import freaklab.sandyz.com.cpresumebuilder.activitys.Final_Preview;
 import freaklab.sandyz.com.cpresumebuilder.activitys.InsertDataActivity;
 import freaklab.sandyz.com.cpresumebuilder.R;
 import freaklab.sandyz.com.cpresumebuilder.Utils;
